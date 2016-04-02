@@ -1,6 +1,6 @@
 
 Global:
-npm install -g gulp
+npm install -g gulp-cli
 npm install -g karma
 npm install -g bower
 
@@ -8,6 +8,9 @@ Project Level:
 npm install
 bower install
 
-To run frontend tests:
+To run build JS:
 gulp buildDevJS
+
+To test frontend:
 gulp testUI
+
