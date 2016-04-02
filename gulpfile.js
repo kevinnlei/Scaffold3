@@ -1,8 +1,10 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'), //alternative to requirejs, browserify
-    sourcemaps = require('gulp-sourcemaps') //for debugging in dev
-    uglify = require('gulp-uglify') //minification for prod
-    KarmaServer = require('karma').Server;
+    sourcemaps = require('gulp-sourcemaps'), //for debugging in dev
+    uglify = require('gulp-uglify'), //minification for prod
+    KarmaServer = require('karma').Server,
+    ngAnnotate = require('gulp-ng-annotate')
+
 
 
 gulp.task('buildDevJS', function(){
@@ -16,6 +18,7 @@ gulp.task('buildDevJS', function(){
 gulp.task('buildProdJS', function(){
   return gulp.src(['./ui/js/app.js', './ui/js/**/*.js'])
       .pipe(concat('main.js'))
+      .pipe(ngAnnotate()) // annotates code to allow for testing before minification
       .pipe(uglify())
       .pipe(gulp.dest('./public/javascripts'))
 })
