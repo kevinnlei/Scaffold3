@@ -1,0 +1,7 @@
+'use strict';
+
+window.app = angular.module('Scaffold3', [])
+app.controller('DummyController', function($scope) {
+  $scope.testMe = "testMe"
+})
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyIsImNvbnRyb2xsZXJzL2R1bW15Q29udHJvbGxlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUNGQTtBQUNBO0FBQ0EiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0Jztcblxud2luZG93LmFwcCA9IGFuZ3VsYXIubW9kdWxlKCdTY2FmZm9sZDMnLCBbXSkiLCJhcHAuY29udHJvbGxlcignRHVtbXlDb250cm9sbGVyJywgZnVuY3Rpb24oJHNjb3BlKSB7XG4gICRzY29wZS50ZXN0TWUgPSBcInRlc3RNZVwiXG59KSJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

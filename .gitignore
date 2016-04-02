@@ -1,0 +1,17 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+node_modules
+project/target/
+project/project/
+target/
+public/bower_components
+*.swp
+*.swo
+logs/
+
