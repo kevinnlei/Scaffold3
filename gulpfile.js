@@ -30,3 +30,6 @@ gulp.task('testUI', function (done) {
     singleRun: true
   }, done).start();
 });
+
+
+//TODO: We can do testing on Firefox and not Chrome bc travis doesn't support it
