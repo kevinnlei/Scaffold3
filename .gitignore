@@ -14,4 +14,4 @@ public/bower_components
 *.swp
 *.swo
 logs/
-
+public/javascripts/main.js
